@@ -7,6 +7,11 @@
   box-sizing: border-box;
 }
 
+ul {
+
+  margin-bottom: 0;
+}
+
 li {
 
   list-style: none;
@@ -29,9 +34,102 @@ a:hover {
 
 /* Navbar up */
 
+.navbar-up ul li a {
 
+  padding: 5px 0;
+}
+
+.navbar-up ul li {
+
+  padding: 5px 0;
+  margin: 0 30px;
+}
+
+.navbar-up ul .nav-up-text:hover {
+
+  border-bottom: 4px solid #9e9e9e;
+}
+
+.navbar-up ul .nav-up-text {
+
+  border-bottom: 4px solid transparent;
+}
 
 /* Navbar down */
+
+.navbar-down {
+
+  background-color: #e6e6e6;
+}
+
+.navbar-down img {
+
+  height: 40px;
+}
+
+.navbar-down ul .nav-down-text a {
+
+  padding: 10px 0;
+}
+
+.navbar-down ul .nav-down-text {
+
+  padding: 10px 0;
+  margin: 0 30px;
+}
+
+.navbar-down ul .nav-down-text {
+
+  border-bottom: 8px solid transparent;
+}
+
+.navbar-down ul .nav-down-text:hover {
+
+  border-bottom: 8px solid #01af74;
+}
+
+.navbar-down ul .logo {
+
+  margin-right: 80px;
+}
+
+/* Jumbo section  */
+
+.jumbo {
+
+  height: 300px;
+
+  background-image: url("../img/jumbo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: white;
+}
+
+.jumbo h1 {
+
+  text-shadow: 0.5px 0.5px black;
+
+}
+
+.jumbo p {
+
+  width: 400px;
+
+  text-align: center;
+  text-shadow: 0.5px 0.5px black;
+  font-size: 18px;
+
+  margin-top: 20px;
+}
+
+.jumbo-shadow {
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.3);
+}
 
 
 
