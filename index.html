@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-queries.css">
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -27,11 +29,11 @@
         <!-- white background up navbar -->
         <nav class="navbar-up">
           <ul class="d-flex justify-content-center">
-            <li class="nav-up-text"><a href="#">HOME</a></li>
-            <li class="nav-up-text"><a href="#">PORTALE ORDINI</a></li>
-            <li class="nav-up-text"><a href="#">AREA DOWNLOAD</a></li>
-            <li class="nav-up-text"><a href="#">LAVORA CON NOI</a></li>
-            <li class="nav-up-text"><a href="#">CONTATTI</a></li>
+            <li class="nav-up-text text-uppercase"><a href="index.html">home</a></li>
+            <li class="nav-up-text text-uppercase"><a href="#">portale ordini</a></li>
+            <li class="nav-up-text text-uppercase"><a href="#">area download</a></li>
+            <li class="nav-up-text text-uppercase"><a href="#">lavora con noi</a></li>
+            <li class="nav-up-text text-uppercase"><a href="#">contatti</a></li>
             <li><a href="#"><img src="img/2000px-Flag_of_Italy.svg.png" alt=""></a></li>
             <li><a href="#"><img src="img/1920px-Flag_of_the_United_Kingdom.svg.png" alt=""></a></li>
           </ul>
@@ -40,12 +42,34 @@
         <!-- grey background down navbar -->
         <nav class="navbar-down">
           <ul class="d-flex justify-content-center">
-            <li class="d-flex align-items-center logo"><a href="#"><img src="img/logo.png" alt=""></a></li>
-            <li class="nav-down-text"><a href="#">CHI SIAMO</a></li>
-            <li class="nav-down-text"><a href="#">PRODUZIONI A DISEGNO</a></li>
-            <li class="nav-down-text"><a href="#">SOLUZIONI RULLATE</a></li>
-            <li class="nav-down-text"><a href="#">TECNOLOGIA</a></li>
-            <li class="nav-down-text"><a href="#">RISORSE</a></li>
+            <li class="d-flex align-items-center logo"><a href="index.html"><img src="img/logo.png" alt=""></a></li>
+            <li class="nav-down-text text-uppercase parent-dropdown who">
+              <a href="#">chi siamo</a>
+              <div class="dropdown">
+                <ul>
+                  <li><a class="text-uppercase" href="#">concept rullatura</a></li>
+                  <li><a class="text-uppercase" href="#">viti di manovra rullate</a></li>
+                  <li><a class="text-uppercase" href="#">viti di comando rullate</a></li>
+                  <li><a class="text-uppercase" href="#">accessori</a></li>
+                  <li><a class="text-uppercase" href="#">prodotti a catalogo</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-down-text text-uppercase"><a href="#">produzioni a disegno</a></li>
+            <li class="nav-down-text text-uppercase parent-dropdown">
+              <a href="#">soluzioni rullate</a>
+              <div class="dropdown">
+                <ul>
+                  <li><a class="text-uppercase" href="#">concept rullatura</a></li>
+                  <li><a class="text-uppercase" href="#">viti di manovra rullate</a></li>
+                  <li><a class="text-uppercase" href="#">viti di comando rullate</a></li>
+                  <li><a class="text-uppercase" href="#">accessori</a></li>
+                  <li><a class="text-uppercase" href="#">prodotti a catalogo</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-down-text text-uppercase"><a href="#">tecnologia</a></li>
+            <li class="nav-down-text text-uppercase"><a href="#">risorse</a></li>
           </ul>
         </nav>
 
@@ -54,8 +78,8 @@
       <!-- jumbo section -->
       <div class="jumbo">
         <div class="jumbo-shadow d-flex align-items-center justify-content-center flex-column">
-          <h1>LOREM IPSUM</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <h1 class="text-uppercase">lorem ipsum</h1>
+          <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</em></p>
         </div>
       </div>
 
@@ -64,23 +88,166 @@
     <!-- MAIN section -->
     <main>
 
-      <!-- components link section -->
-      <section class="components">
+      <!-- components links section -->
+      <section class="components d-flex justify-content-center align-items-center flex-column">
+        <h2>LOREM IPSUM</h2>
+        <div class="components-links d-flex flex-wrap">
+          <div class="components-link">
+            <a class="d-flex flex-column" href="#">
+              <img src="img/componenti.png" alt="">
+              <span class="d-flex justify-content-center align-items-center text-uppercase">
+                componenti <br>
+                meccanici
+               </span>
+            </a>
+          </div>
+          <div class="components-link">
+            <a class="d-flex flex-column" href="#">
+              <img src="img/componenti.png" alt="">
+              <span class="d-flex justify-content-center align-items-center text-uppercase">
+                componenti multi <br>
+                lavorazione
+               </span>
+            </a>
+          </div>
+          <div class="components-link">
+            <a class="d-flex flex-column" href="#">
+              <img src="img/componenti.png" alt="">
+              <span class="d-flex justify-content-center align-items-center text-uppercase">
+                viti <br>
+                rullate
+               </span>
+            </a>
+          </div>
+          <div class="components-link">
+            <a class="d-flex flex-column" href="#">
+              <img src="img/componenti.png" alt="">
+              <span class="d-flex justify-content-center align-items-center text-uppercase">
+                viti senza fine
+               </span>
+            </a>
+          </div>
+          <div class="components-link">
+            <a class="d-flex flex-column" href="#">
+              <img src="img/componenti.png" alt="">
+              <span class="d-flex justify-content-center align-items-center text-uppercase">
+                lavorazioni in <br>
+                conto lavoro
+               </span>
+            </a>
+          </div>
+          <div class="components-link">
+            <a class="d-flex flex-column" href="#">
+              <img src="img/componenti.png" alt="">
+              <span class="d-flex justify-content-center align-items-center text-uppercase">
+                soluzioni rullate
+               </span>
+            </a>
+          </div>
 
+        </div>
       </section>
 
+      <!-- company divisions section -->
       <section class="company-divisions">
-
+        <div class="jumbo-shadow d-flex flex-column justify-content-center align-items-center">
+          <h2 class="text-uppercase">lorem ipsum</h2>
+          <div class="divisions d-flex justify-content-center align-items-center">
+            <div class="division flex-column d-flex justify-content-center align-items-center align-self-start">
+              <img src="img/simboli/icona-tornio.png" alt="">
+              <h3 class="text-uppercase">turning division</h3>
+              <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</em></p>
+            </div>
+            <div class="division flex-column d-flex justify-content-center align-items-center align-self-start">
+              <img src="img/simboli/icona-cold-forming.png" alt="">
+              <h3 class="text-uppercase">cold forming division</h3>
+              <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</em></p>
+            </div>
+            <div class="division flex-column d-flex justify-content-center align-items-center align-self-start">
+              <img src="img/simboli/icona-test-lab.png" alt="">
+              <h3 class="text-uppercase">il test lab</h3>
+              <p><em>Lorem ipsum dolor sit amet, consectetur</em></p>
+            </div>
+            <div class="division flex-column d-flex justify-content-center align-items-center align-self-start">
+              <img src="img/simboli/icona-applicazioni.png" alt="">
+              <h3 class="text-uppercase">applicazioni</h3>
+              <p><em>Lorem ipsum dolor sit amet, consectetur</em></p>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section class="location">
-
+      <section class="location d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-uppercase">lorem ipsum</h2>
+        <div class="location-main-content d-flex justify-content-center align-items-center">
+          <div class="location-main-content-text d-flex flex-column justify-content-start">
+            <div class="location-main-content-title d-flex justify-content-start align-items-center">
+              <h3 class="text-uppercase green-underline">lorem ipsum</h3>
+              <h3 class="text-uppercase grey-underline">lorem ipsum</h3>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip  ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <img class="align-self-start" src="img/skyscrapers.png" alt="">
+        </div>
+        <div class="location-buttons d-flex justify-content-between">
+          <a class="button-green text-uppercase" href="#">lorem ipsum</a>
+          <a class="button-grey text-uppercase" href="#">lorem ipsum</a>
+          <a class="invisible" href="#">lorem ipsum</a>
+        </div>
       </section>
 
     </main>
 
     <!-- FOOTER section -->
     <footer>
+
+      <div class="footer-container d-flex justify-content-center align-items-center">
+        <div class="footer-content d-flex flex-column justify-content-between align-items-center">
+          <a class="align-self-start" href="index.html"><img src="img/logo.png" alt=""></a>
+          <div class="footer-main-content d-flex justify-content-between align-items-center">
+            <div class="footer-column">
+              <ul>
+                <li><a href="#"><h4 class="text-uppercase">lorem ipsum</h4></a></li>
+                <li><a href="#"><span class="text-uppercase">la torneria</span></a></li>
+                <li><a href="#"><span class="text-uppercase">turning division</span></a></li>
+                <li><a href="#"><span class="text-uppercase">cold forming division</span></a></li>
+                <li><a href="#"><span class="text-uppercase">applicazioni</span></a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <ul>
+                <li><a href="#"><h4 class="text-uppercase">lorem ipsum</h4></a></li>
+                <li><a href="#"><span class="text-uppercase">la torneria</span></a></li>
+                <li><a href="#"><span class="text-uppercase">turning division</span></a></li>
+                <li><a href="#"><span class="text-uppercase">cold forming division</span></a></li>
+                <li><a href="#"><span class="text-uppercase">applicazioni</span></a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <ul>
+                <li><a href="#"><h4 class="text-uppercase">lorem ipsum</h4></a></li>
+                <li><a href="#"><span class="text-uppercase">la torneria</span></a></li>
+                <li><a href="#"><span class="text-uppercase">turning division</span></a></li>
+                <li><a href="#"><span class="text-uppercase">cold forming division</span></a></li>
+                <li><a href="#"><span class="text-uppercase">applicazioni</span></a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <ul>
+                <li><a href="#"><h4 class="text-uppercase">lorem ipsum</h4></a></li>
+                <li><a href="#"><span class="text-uppercase">la torneria</span></a></li>
+                <li><a href="#"><span class="text-uppercase">turning division</span></a></li>
+                <li><a href="#"><span class="text-uppercase">cold forming division</span></a></li>
+                <li><a href="#"><span class="text-uppercase">applicazioni</span></a></li>
+              </ul>
+            </div>
+          </div>
+          <span class="align-self-center">Informazioni aziendali di rito</span>
+        </div>
+      </div>
 
     </footer>
 

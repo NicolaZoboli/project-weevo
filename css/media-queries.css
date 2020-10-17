@@ -1,0 +1,22 @@
+/* vesione smartphone */
+@media all and (max-width:768px) {
+
+}
+
+/* vesione tablet */
+@media all and (min-width:769px) and (max-width:1199px) {
+
+
+}
+
+/* vesione laptop */
+@media all and (min-width:1200px) and (max-width:1399px) {
+
+
+}
+
+/* vesione desktop */
+@media all and (min-width:1400px) {
+
+
+}
