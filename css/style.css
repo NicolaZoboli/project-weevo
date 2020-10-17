@@ -1,0 +1,48 @@
+
+* {
+
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+li {
+
+  list-style: none;
+}
+
+a {
+
+  color: black;
+}
+
+a:hover {
+
+  text-decoration: none;
+  color: black;
+}
+
+/* HEADER */
+
+/* Navbars section */
+
+/* Navbar up */
+
+
+
+/* Navbar down */
+
+
+
+/* MAIN */
+main {
+
+
+}
+
+/* FOOTER */
+footer {
+
+
+}
