@@ -14,6 +14,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8f6a19e8ac.js" crossorigin="anonymous"></script>
 
     <title>Project Weevo</title>
 
@@ -34,8 +35,10 @@
             <li class="nav-up-text text-uppercase"><a href="#">area download</a></li>
             <li class="nav-up-text text-uppercase"><a href="#">lavora con noi</a></li>
             <li class="nav-up-text text-uppercase"><a href="#">contatti</a></li>
-            <li><a href="#"><img src="img/2000px-Flag_of_Italy.svg.png" alt=""></a></li>
-            <li><a href="#"><img src="img/1920px-Flag_of_the_United_Kingdom.svg.png" alt=""></a></li>
+            <li>
+              <li class="flags"><a href="#"><img src="img/2000px-Flag_of_Italy.svg.png" alt=""></a></li>
+              <li class="flags"><a href="#"><img src="img/1920px-Flag_of_the_United_Kingdom.svg.png" alt=""></a></li>
+            </li>
           </ul>
         </nav>
 
@@ -47,11 +50,11 @@
               <a href="#">chi siamo</a>
               <div class="dropdown">
                 <ul>
-                  <li><a class="text-uppercase" href="#">concept rullatura</a></li>
-                  <li><a class="text-uppercase" href="#">viti di manovra rullate</a></li>
-                  <li><a class="text-uppercase" href="#">viti di comando rullate</a></li>
-                  <li><a class="text-uppercase" href="#">accessori</a></li>
-                  <li><a class="text-uppercase" href="#">prodotti a catalogo</a></li>
+                  <li><a class="text-uppercase" href="#">la torneria</a></li>
+                  <li><a class="text-uppercase" href="#">i nostri valori</a></li>
+                  <li><a class="text-uppercase" href="#">la storia</a></li>
+                  <li><a class="text-uppercase" href="#">il governo d'impresa</a></li>
+                  <li><a class="text-uppercase" href="#">sostenibilità e innovazione</a></li>
                 </ul>
               </div>
             </li>
@@ -73,6 +76,12 @@
           </ul>
         </nav>
 
+      </div>
+
+      <!-- mobile menu section -->
+      <div class="mobile-menu justify-content-between align-items-center">
+        <img src="img/logo.png" alt="">
+        <a href="#"><i class="fas fa-ellipsis-h"></i></a>
       </div>
 
       <!-- jumbo section -->
@@ -101,7 +110,7 @@
                </span>
             </a>
           </div>
-          <div class="components-link">
+          <div class="components-link show-mobile">
             <a class="d-flex flex-column" href="#">
               <img src="img/componenti.png" alt="">
               <span class="d-flex justify-content-center align-items-center text-uppercase">
@@ -153,22 +162,22 @@
         <div class="jumbo-shadow d-flex flex-column justify-content-center align-items-center">
           <h2 class="text-uppercase">lorem ipsum</h2>
           <div class="divisions d-flex justify-content-center align-items-center">
-            <div class="division flex-column d-flex justify-content-center align-items-center align-self-start">
+            <div class="division flex-column justify-content-center align-items-center align-self-start show-mobile">
               <img src="img/simboli/icona-tornio.png" alt="">
               <h3 class="text-uppercase">turning division</h3>
               <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</em></p>
             </div>
-            <div class="division flex-column d-flex justify-content-center align-items-center align-self-start">
+            <div class="division flex-column justify-content-center align-items-center align-self-start">
               <img src="img/simboli/icona-cold-forming.png" alt="">
               <h3 class="text-uppercase">cold forming division</h3>
               <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</em></p>
             </div>
-            <div class="division flex-column d-flex justify-content-center align-items-center align-self-start">
+            <div class="division flex-column justify-content-center align-items-center align-self-start">
               <img src="img/simboli/icona-test-lab.png" alt="">
               <h3 class="text-uppercase">il test lab</h3>
               <p><em>Lorem ipsum dolor sit amet, consectetur</em></p>
             </div>
-            <div class="division flex-column d-flex justify-content-center align-items-center align-self-start">
+            <div class="division flex-column justify-content-center align-items-center align-self-start">
               <img src="img/simboli/icona-applicazioni.png" alt="">
               <h3 class="text-uppercase">applicazioni</h3>
               <p><em>Lorem ipsum dolor sit amet, consectetur</em></p>
@@ -177,6 +186,7 @@
         </div>
       </section>
 
+      <!-- location section -->
       <section class="location d-flex flex-column justify-content-center align-items-center">
         <h2 class="text-uppercase">lorem ipsum</h2>
         <div class="location-main-content d-flex justify-content-center align-items-center">
@@ -185,16 +195,20 @@
               <h3 class="text-uppercase green-underline">lorem ipsum</h3>
               <h3 class="text-uppercase grey-underline">lorem ipsum</h3>
             </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip  ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+            <div class="location-main-content-paragraph">
+              <p class="show-mobile">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip  ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
           </div>
           <img class="align-self-start" src="img/skyscrapers.png" alt="">
         </div>
-        <div class="location-buttons d-flex justify-content-between">
+        <div class="location-buttons d-flex">
           <a class="button-green text-uppercase" href="#">lorem ipsum</a>
-          <a class="button-grey text-uppercase" href="#">lorem ipsum</a>
+          <a class="button-grey text-uppercase show-mobile" href="#">lorem ipsum</a>
           <a class="invisible" href="#">lorem ipsum</a>
         </div>
       </section>
@@ -207,7 +221,7 @@
       <div class="footer-container d-flex justify-content-center align-items-center">
         <div class="footer-content d-flex flex-column justify-content-between align-items-center">
           <a class="align-self-start" href="index.html"><img src="img/logo.png" alt=""></a>
-          <div class="footer-main-content d-flex justify-content-between align-items-center">
+          <div class="footer-main-content justify-content-between align-items-center">
             <div class="footer-column">
               <ul>
                 <li><a href="#"><h4 class="text-uppercase">lorem ipsum</h4></a></li>
@@ -245,7 +259,14 @@
               </ul>
             </div>
           </div>
-          <span class="align-self-center">Informazioni aziendali di rito</span>
+          <div class="show-mobile">
+            <ul>
+              <li><a class="text-uppercase" href="#">portale ordini</a></li>
+              <li><a class="text-uppercase" href="#">area download</a></li>
+              <li><a class="text-uppercase" href="#">privacy e cookie</a></li>
+            </ul>
+          </div>
+          <span>Informazioni aziendali di rito</span>
         </div>
       </div>
 

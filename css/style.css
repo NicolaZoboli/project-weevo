@@ -10,6 +10,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+html,body{
+    overflow-x: hidden;
+}
+
 ul {
 
   margin-bottom: 0;
@@ -54,6 +58,11 @@ a:hover {
 
   padding: 5px 0;
   margin: 0 30px;
+}
+
+.navbar-up ul li.flags {
+
+  margin: 0 10px;
 }
 
 .navbar-up ul .nav-up-text:hover {
@@ -116,7 +125,7 @@ a:hover {
   display: none;
   position: absolute;
   background: white;
-  top: 119%;
+  top: 118%;
   right: -78px;
   z-index: 3;
   box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 4px 0px, rgba(0, 0, 0, 0.08) 0px 8px 16px 0px;
@@ -153,6 +162,13 @@ a:hover {
 .dropdown ul li a:hover {
 
   color: black;
+}
+
+/* Mobile menu section */
+
+.mobile-menu {
+
+  display: none;
 }
 
 /* Jumbo section  */
@@ -199,6 +215,11 @@ a:hover {
   height: 600px;
 }
 
+.components h2 {
+
+  color: #707070;
+}
+
 .components-links {
 
   height: 500px;
@@ -243,6 +264,8 @@ a:hover {
 
   border-top: 7px solid #01af74;
 
+  color: #707070;
+
   text-align: center;
 }
 
@@ -277,6 +300,8 @@ a:hover {
 
 .division {
 
+  display: flex;
+
   margin: 0 20px;
   width: 15%;
 }
@@ -292,6 +317,7 @@ a:hover {
 }
 
 .division h3 {
+
 
   font-size: 20px;
   text-align: center;
@@ -310,6 +336,11 @@ a:hover {
 .location {
 
   height: 600px;
+}
+
+.location h2 {
+
+  color: #707070;
 }
 
 .location-main-content {
@@ -331,10 +362,15 @@ a:hover {
   margin-right: 30px;
 }
 
-.location-main-content-text p {
+.location-main-content-text .location-main-content-paragraph {
 
   padding: 10px 0;
-  font-size: 14px;
+  font-size: 16px;
+}
+
+.location-main-content-text .location-main-content-paragraph p {
+
+  margin-bottom: 0;
 }
 
 .location-main-content-title {
@@ -343,6 +379,8 @@ a:hover {
 }
 
 .location-main-content-title h3 {
+
+  color: #707070;
 
   font-size: 18px;
   padding-bottom: 5px;
@@ -365,6 +403,8 @@ a:hover {
 .location-buttons {
 
   width: 90%;
+
+  justify-content: space-between;
 }
 
 .location-buttons a {
@@ -388,7 +428,8 @@ a:hover {
 
 .location-buttons a.button-grey {
 
-  border: 1px solid black;
+  color: #707070;
+  border: 1px solid #707070;
 }
 
 .location-buttons a.button-grey:hover {
@@ -431,6 +472,16 @@ footer a:hover {
   height: 80%;
 }
 
+.footer-content > span {
+
+  align-self: center;
+}
+
+.footer-content .show-mobile {
+
+  display: none;
+}
+
 .footer-content img {
 
   height: 40px;
@@ -438,6 +489,7 @@ footer a:hover {
 
 .footer-main-content {
 
+  display: flex;
   width: 100%;
 }
 
