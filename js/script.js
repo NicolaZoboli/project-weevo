@@ -28,6 +28,15 @@ function closeMenu() {
     $('#side-menu').css('width', '0');
     $('#container').css('margin-right', '0');
   });
+
+  $(window).resize(function(){
+
+    if ($(window).width() > 768) {
+
+      $('#side-menu').css('width', '0');
+      $('#container').css('margin-right', '0');
+       }
+  });
 }
 
 // slide toggle side menu child link function
