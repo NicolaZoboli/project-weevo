@@ -171,6 +171,137 @@ a:hover {
   display: none;
 }
 
+/* The side navigation menu */
+.sidemenu {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.sidemenu-green {
+
+  background-color: #01af74;
+  color: white;
+  padding: 10px 0 0;
+}
+
+.sidemenu-grey {
+
+  background-color: #e6e6e6;
+  padding: 10px 0 0;
+
+}
+
+/* The navigation menu links */
+.sidemenu a {
+
+  display: block;
+  transition: 0.3s;
+  font-size: 12px;
+}
+
+.sidemenu-green a {
+
+  color: white;
+  border-bottom: 3px solid transparent;
+}
+
+.sidemenu-green a:hover {
+
+  border-bottom: 3px solid white;
+}
+
+.sidemenu-grey a {
+
+  color: #707070;
+  border-bottom: 3px solid transparent;
+}
+
+.sidemenu-grey a:hover {
+
+  border-bottom: 3px solid #9e9e9e;
+}
+
+
+.sidemenu span {
+
+  font-size: 11px;
+  padding-right: 10px;
+  margin: 7px 0 20px 0;
+}
+
+.sidemenu ul li {
+
+  padding-right: 10px;
+}
+
+.sidemenu ul li a {
+
+  margin-bottom: 15px;
+}
+
+.parent-sidemenu {
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.child-sidemenu {
+
+  display: none;
+
+  background-color: white;
+
+  padding: 10px 0;
+
+  margin-bottom: 10px;
+
+  width: 200px;
+}
+
+.child-sidemenu li {
+
+  text-align: right;
+
+  margin-bottom: 10px;
+}
+
+.child-sidemenu a {
+
+  color: #707070;
+  border-bottom: 3px solid transparent;
+
+  display: inline;
+  margin-bottom: 10px;
+
+  padding: 3px;
+}
+
+.child-sidemenu a:hover {
+
+  border-bottom: 3px solid #707070;
+}
+
+
+
+/* Position and style the close button (top right corner) */
+.sidemenu .closebtn {
+  position: absolute;
+  top: -5px;
+  left: 10px;
+  font-size: 36px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#container {
+  transition: margin-right .5s;
+}
+
 /* Jumbo section  */
 
 .jumbo {
