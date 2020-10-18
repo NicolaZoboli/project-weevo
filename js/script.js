@@ -1,4 +1,5 @@
 
+// navbar dropdown function
 function dropdown() {
 
   $('.parent-dropdown').hover(function() {
@@ -9,6 +10,7 @@ function dropdown() {
   });
 }
 
+// open side menu function
 function openMenu() {
 
   $('#open-button').click(function() {
@@ -18,6 +20,7 @@ function openMenu() {
   });
 }
 
+// close side menu function
 function closeMenu() {
 
   $('#close-button').click(function() {
@@ -27,6 +30,7 @@ function closeMenu() {
   });
 }
 
+// slide toggle side menu child link function
 function showMenuChild() {
 
   $('.parent-sidemenu').click(function() {

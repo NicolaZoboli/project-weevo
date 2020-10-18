@@ -124,11 +124,13 @@ a:hover {
 
   display: none;
   position: absolute;
+
   background: white;
+
   top: 118%;
   right: -78px;
+
   z-index: 3;
-  box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 4px 0px, rgba(0, 0, 0, 0.08) 0px 8px 16px 0px;
 }
 
 .navbar-down .who .dropdown {
@@ -139,6 +141,7 @@ a:hover {
 .dropdown ul li {
 
   width: 280px;
+
   background-color: #01af74;
 }
 
@@ -171,27 +174,35 @@ a:hover {
   display: none;
 }
 
-/* The side navigation menu */
+/* side menu section */
 .sidemenu {
   width: 0;
+
   position: fixed;
   z-index: 1;
+
   top: 0;
   right: 0;
+
   overflow: hidden;
+
   transition: 0.5s;
 }
 
+/* green up side menu */
 .sidemenu-green {
 
   background-color: #01af74;
   color: white;
+
   padding: 10px 0 0;
 }
 
+/* grey down side menu */
 .sidemenu-grey {
 
   background-color: #e6e6e6;
+
   padding: 10px 0 0;
 
 }
@@ -200,13 +211,16 @@ a:hover {
 .sidemenu a {
 
   display: block;
+
   transition: 0.3s;
+
   font-size: 12px;
 }
 
 .sidemenu-green a {
 
   color: white;
+
   border-bottom: 3px solid transparent;
 }
 
@@ -218,6 +232,7 @@ a:hover {
 .sidemenu-grey a {
 
   color: #707070;
+
   border-bottom: 3px solid transparent;
 }
 
@@ -230,6 +245,7 @@ a:hover {
 .sidemenu span {
 
   font-size: 11px;
+
   padding-right: 10px;
   margin: 7px 0 20px 0;
 }
@@ -244,6 +260,7 @@ a:hover {
   margin-bottom: 15px;
 }
 
+/* dropdown side menu links */
 .parent-sidemenu {
 
   display: flex;
@@ -274,11 +291,12 @@ a:hover {
 .child-sidemenu a {
 
   color: #707070;
+
   border-bottom: 3px solid transparent;
 
   display: inline;
-  margin-bottom: 10px;
 
+  margin-bottom: 10px;
   padding: 3px;
 }
 
@@ -289,7 +307,7 @@ a:hover {
 
 
 
-/* Position and style the close button (top right corner) */
+/* close button  */
 .sidemenu .closebtn {
   position: absolute;
   top: -5px;
@@ -297,7 +315,6 @@ a:hover {
   font-size: 36px;
 }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #container {
   transition: margin-right .5s;
 }
